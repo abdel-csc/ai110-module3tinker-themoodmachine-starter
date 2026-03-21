@@ -13,29 +13,15 @@ This file defines:
 # ---------------------------------------------------------------------
 
 POSITIVE_WORDS = [
-    "happy",
-    "great",
-    "good",
-    "love",
-    "excited",
-    "awesome",
-    "fun",
-    "chill",
-    "relaxed",
-    "amazing",
+    "happy", "great", "good", "love", "excited", "awesome",
+    "fun", "chill", "relaxed", "amazing",
+    "fire", "hilarious", "proud", "sick", "goated", "lowkey"
 ]
 
 NEGATIVE_WORDS = [
-    "sad",
-    "bad",
-    "terrible",
-    "awful",
-    "angry",
-    "upset",
-    "tired",
-    "stressed",
-    "hate",
-    "boring",
+    "sad", "bad", "terrible", "awful", "angry", "upset",
+    "tired", "stressed", "hate", "boring",
+    "done", "exhausted", "stuck", "dead", "meh"
 ]
 
 # ---------------------------------------------------------------------
@@ -68,6 +54,27 @@ TRUE_LABELS = [
 ]
 
 # TODO: Add 5-10 more posts and labels.
+
+SAMPLE_POSTS.append("I absolutely love being stuck in traffic 🙄")   # sarcasm
+SAMPLE_POSTS.append("Lowkey stressed but kind of proud of myself 😅")  # mixed
+# positive slang
+SAMPLE_POSTS.append("This is so fire 🔥")
+# positive slang
+SAMPLE_POSTS.append("I'm dead 💀 that was hilarious")
+SAMPLE_POSTS.append("meh, whatever 😒")                              # neutral
+SAMPLE_POSTS.append("I'm so done with everything 😩")                # negative
+SAMPLE_POSTS.append("not bad honestly 🙂")                           # positive
+# neutral/ambiguous
+SAMPLE_POSTS.append("I'm fine 🙂")
+
+TRUE_LABELS.append("negative")   # sarcasm — actually negative
+TRUE_LABELS.append("mixed")      # stressed but proud
+TRUE_LABELS.append("positive")   # fire = good
+TRUE_LABELS.append("positive")   # dead 💀 used as funny
+TRUE_LABELS.append("neutral")    # meh
+TRUE_LABELS.append("negative")   # so done
+TRUE_LABELS.append("positive")   # not bad = good
+TRUE_LABELS.append("neutral")    # ambiguous
 #
 # Requirements:
 #   - For every new post you add to SAMPLE_POSTS, you must add one
