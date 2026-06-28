@@ -65,3 +65,4 @@ During this lab you will:
 - When debugging, print tokens, scores, or intermediate choices.
 - Ask an AI assistant to help create edge case posts or unusual wording.
 - Try examples that mislead or confuse your model. Failure cases teach you the most.
+- You should try to elevate your understanding through the perspective of a user. 
